@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kabar_app/features/onboarding/presentation/view/onboarding_view.dart';
 
 import 'core/routes/app_router.dart';
 import 'core/routes/routes.dart';
@@ -12,11 +13,9 @@ class KabarApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       onGenerateRoute: appRouter.generateRoute,
-      initialRoute: Routes.homeView,
+      initialRoute: Routes.onBoardingView,
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        body: Container(),
-      ),
+      home: const OnBoardingView(),
     );
   }
 }
