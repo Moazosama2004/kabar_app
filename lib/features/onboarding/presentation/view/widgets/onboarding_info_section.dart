@@ -30,7 +30,7 @@ class OnBoardingInfoSection extends StatelessWidget {
             pageController: pageController,
           ),
           const SizedBox(
-            height: 40,
+            height: 15,
           )
         ],
       ),

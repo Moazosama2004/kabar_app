@@ -42,17 +42,23 @@ class _OnBoardingPageViewState extends State<OnBoardingPageView> {
       controller: pageController,
       itemCount: items.length,
       itemBuilder: (context, index) {
-        return Column(
-          children: [
-            OnBoardingImage(
-              onboardingModel: items[index],
-            ),
-            Expanded(
-              child: OnBoardingInfoSection(
-                currentIndex: currentIndex,
-                pageController: pageController,
+        return CustomScrollView(
+          slivers: [
+            SliverFillRemaining(
+              child: Column(
+                children: [
+                  OnBoardingImage(
+                    onboardingModel: items[index],
+                  ),
+                  Expanded(
+                    child: OnBoardingInfoSection(
+                      currentIndex: currentIndex,
+                      pageController: pageController,
+                    ),
+                  ),
+                ],
               ),
-            ),
+            )
           ],
         );
       },

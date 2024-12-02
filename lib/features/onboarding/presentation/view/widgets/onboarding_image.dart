@@ -8,8 +8,10 @@ class OnBoardingImage extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       height: MediaQuery.sizeOf(context).height * 0.63,
+      width: double.infinity,
       child: Image.asset(
         onboardingModel.image,
+        fit: BoxFit.fill,
       ),
     );
   }
