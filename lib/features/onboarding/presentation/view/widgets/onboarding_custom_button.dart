@@ -11,17 +11,12 @@ class OnBoardingCustomButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return ElevatedButton(
       onPressed: onPressed,
-      style: ButtonStyle(
-        padding: const WidgetStatePropertyAll(
-            EdgeInsets.symmetric(horizontal: 24, vertical: 13)),
-        shape: WidgetStatePropertyAll(
-          RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(6),
-          ),
+      style: ElevatedButton.styleFrom(
+        padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 13),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(6),
         ),
-        backgroundColor: WidgetStatePropertyAll(
-          AppColors.primaryColor,
-        ),
+        backgroundColor: AppColors.primaryColor,
       ),
       child: Text(
         title,

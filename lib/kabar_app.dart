@@ -1,3 +1,4 @@
+import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:kabar_app/features/onboarding/presentation/view/onboarding_view.dart';
 
@@ -12,6 +13,8 @@ class KabarApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      // locale: DevicePreview.locale(context),
+      // builder: DevicePreview.appBuilder,
       onGenerateRoute: appRouter.generateRoute,
       initialRoute: Routes.onBoardingView,
       debugShowCheckedModeBanner: false,

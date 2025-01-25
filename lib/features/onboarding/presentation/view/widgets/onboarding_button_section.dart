@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kabar_app/core/routes/routes.dart';
 import 'package:kabar_app/features/onboarding/presentation/view/widgets/onboarding_custom_button.dart';
 import 'package:kabar_app/features/onboarding/presentation/view/widgets/onboarding_custom_text_button.dart';
 
@@ -24,10 +25,14 @@ class OnBoardingButtonSection extends StatelessWidget {
         ),
         OnBoardingCustomButton(
           title: currentIndex == 2 ? 'Get Started' : 'Next',
-          onPressed: () => pageController.nextPage(
-            duration: const Duration(milliseconds: 400),
-            curve: Curves.easeIn,
-          ),
+          onPressed: currentIndex == 2
+              ? () {
+                  Navigator.pushNamed(context, Routes.loginView);
+                }
+              : () => pageController.nextPage(
+                    duration: const Duration(milliseconds: 400),
+                    curve: Curves.easeIn,
+                  ),
         ),
       ],
     );
