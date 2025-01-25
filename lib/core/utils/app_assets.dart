@@ -7,8 +7,8 @@ class Assets {
   static const String imagesFacebook = "assets/images/facebook.svg";
 
   /// Assets for imagesGoogle
-  /// assets/images/google.png
-  static const String imagesGoogle = "assets/images/google.png";
+  /// assets/images/google.svg
+  static const String imagesGoogle = "assets/images/google.svg";
 
   /// Assets for imagesLogo
   /// assets/images/logo.svg

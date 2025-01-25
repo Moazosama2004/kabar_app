@@ -1,3 +1,4 @@
+import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:kabar_app/kabar_app.dart';
 import 'core/routes/app_router.dart';

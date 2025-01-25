@@ -47,6 +47,15 @@ abstract class AppStyles {
     );
   }
 
+  static TextStyle styleSimiBold14() {
+    return TextStyle(
+      color: AppColors.primaryColor,
+      fontSize: 14,
+      fontFamily: 'Poppins',
+      fontWeight: FontWeight.w600,
+    );
+  }
+
   static TextStyle styleBold32() {
     return TextStyle(
       color: AppColors.deepgrayColor,
